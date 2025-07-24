@@ -7,127 +7,40 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <h1>League Rules</h1>
+  <h2 style="margin-top: 0;">League Rules</h2>
 
-  <div class="section">
-    <h2>General</h2>
-    <ul>
-      <li>12 person league</li>
-      <li>The league ends when someone wins 2 years in a row</li>
-    </ul>
-  </div>
+  <p><strong>League Type:</strong> 12 teams, dynasty format. Ends when someone wins 2 straight seasons.</p>
 
-  <div class="section">
-    <h2>Buy-In</h2>
-    <ul>
-      <li>Year 1 Buy-In: $100</li>
-      <li>Every year after: $50</li>
-      <li><strong>Explanation:</strong> Each season you pay $50 in advance for the next season. This discourages quitting and helps attract replacements for orphan teams.</li>
-    </ul>
-  </div>
+  <p><strong>Buy-In:</strong> $100 (Year 1), then $50/year (paid ahead for next season).</p>
 
-  <div class="section">
-    <h2>Buy-In Allocation / Payout</h2>
-    <ul>
-      <li>From each $50 buy-in:
-        <ul>
-          <li>$30 → Small Pot (season winner)</li>
-          <li>$20 → Large Pot (league winner who wins 2 years in a row)</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+  <p><strong>Payouts:</strong><br>
+  $30 of buy-in → yearly pot: $310 to champ, $50 to runner-up<br>
+  $20 of buy-in → grand pot for back-to-back champion</p>
 
-  <div class="section">
-    <h2>Small Pot Distribution</h2>
-    <ul>
-      <li>$310 to winner</li>
-      <li>$50 to runner-up</li>
-    </ul>
-  </div>
+  <p><strong>Draft:</strong><br>
+  Year 1: Snake, randomized, 8hr picks, no trades<br>
+  Rookie: 4 rounds, linear<br>
+  Picks: Playoff teams by finish; non-playoff by reverse MaxPF</p>
 
-  <div class="section">
-    <h2>Drafting</h2>
-    <ul>
-      <li>Year 1: Snake draft, randomized order, no trading, 8 hours per pick</li>
-      <li>Rookie drafts: 4 rounds, linear order</li>
-    </ul>
-  </div>
+  <p><strong>Roster:</strong><br>
+  1QB, 2RB, 3WR, 1TE, 2Flex, 16Bench, 2IR, 6Taxi<br>
+  No Defense or Kickers</p>
 
-  <div class="section">
-    <h2>Rookie Draft Pick Positioning</h2>
-    <ul>
-      <li><strong>Playoff Teams:</strong> Ordered by final placing (tie-breaker: max points)</li>
-      <li><strong>Non-Playoff Teams:</strong> Reverse order of Max Points For (to discourage tanking)</li>
-      <li><em>Note:</em> Draft order will be adjusted manually using MaxPF in the app</li>
-    </ul>
-  </div>
+  <p><strong>Taxi Rules:</strong><br>
+  Only drafted players, max 2 years. Once played, can't return.</p>
 
-  <div class="section">
-    <h2>Lineup</h2>
-    <ul>
-      <li>1 QB</li>
-      <li>2 RB</li>
-      <li>3 WR</li>
-      <li>1 TE</li>
-      <li>2 Flex</li>
-      <li>0 Defense</li>
-      <li>0 Kickers</li>
-      <li>16 Bench slots</li>
-      <li>2 IR slots</li>
-      <li>6 Taxi slots</li>
-    </ul>
-  </div>
+  <p><strong>Playoffs:</strong> Top 6 qualify, top 2 get byes</p>
 
-  <div class="section">
-    <h2>Taxi Rules</h2>
-    <ul>
-      <li>Only drafted players may be placed on Taxi Squad</li>
-      <li>Players may remain on taxi for 2 seasons</li>
-      <li>Once started in lineup, they cannot return to taxi (local rule — not enforced in app)</li>
-    </ul>
-  </div>
+  <p><strong>Scoring:</strong> Full PPR, 6pt passing TDs</p>
 
-  <div class="section">
-    <h2>Playoffs</h2>
-    <ul>
-      <li>Top 6 teams qualify</li>
-      <li>Top 2 seeds receive byes</li>
-    </ul>
-  </div>
+  <p><strong>Waivers:</strong> FAAB system</p>
 
-  <div class="section">
-    <h2>Scoring</h2>
-    <ul>
-      <li>Full PPR scoring</li>
-      <li>6 point passing touchdowns</li>
-    </ul>
-  </div>
+  <p><strong>Trades:</strong> Instant processing. 8 votes needed to reverse. Only upcoming picks tradable.</p>
 
-  <div class="section">
-    <h2>Waivers</h2>
-    <ul>
-      <li>FAAB (Free Agent Acquisition Budget) system</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Trades</h2>
-    <ul>
-      <li>Trades are processed immediately</li>
-      <li>Collusion concerns trigger a league vote — 8 votes required to revert trade</li>
-      <li>Only current season and upcoming draft picks may be traded</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Rule Changes</h2>
-    <ul>
-      <li>Any rule changes require 8 "yes" votes to pass</li>
-      <li>If no rule exists for a situation, it will be allowed until a rule is made</li>
-    </ul>
-  </div>
+  <p><strong>Rules:</strong><br>
+  Changes require 8 votes. Anything not explicitly covered is allowed until voted on.</p>
 `;
+
 
 /*   STEP 3   */
 /*
