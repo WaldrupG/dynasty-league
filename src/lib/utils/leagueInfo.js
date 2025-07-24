@@ -7,7 +7,7 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <h2 style="margin-top: 0;">League Rules</h2>
+  <p><strong>League Rules</p>
 
   <p><strong>League Type:</strong> 12 teams, dynasty format. Ends when someone wins 2 straight seasons.</p>
 
@@ -27,7 +27,7 @@ export const homepageText = `
   No Defense or Kickers</p>
 
   <p><strong>Taxi Rules:</strong><br>
-  Only drafted players, max 2 years. Once played, can't return.</p>
+  Only rookies and 2nd year players. Once played in starting line-up - can't return to taxi squad.</p>
 
   <p><strong>Playoffs:</strong> Top 6 qualify, top 2 get byes</p>
 
@@ -35,7 +35,7 @@ export const homepageText = `
 
   <p><strong>Waivers:</strong> FAAB system</p>
 
-  <p><strong>Trades:</strong> Instant processing. 8 votes needed to reverse. Only upcoming picks tradable.</p>
+  <p><strong>Trades:</strong> Instant processing. 8 votes needed to reverse. (Please just done collude) Only upcoming year's picks tradable.</p>
 
   <p><strong>Rules:</strong><br>
   Changes require 8 votes. Anything not explicitly covered is allowed until voted on.</p>
