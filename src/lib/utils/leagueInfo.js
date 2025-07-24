@@ -7,12 +7,126 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h1>League Rules</h1>
+
+  <div class="section">
+    <h2>General</h2>
+    <ul>
+      <li>12 person league</li>
+      <li>The league ends when someone wins 2 years in a row</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Buy-In</h2>
+    <ul>
+      <li>Year 1 Buy-In: $100</li>
+      <li>Every year after: $50</li>
+      <li><strong>Explanation:</strong> Each season you pay $50 in advance for the next season. This discourages quitting and helps attract replacements for orphan teams.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Buy-In Allocation / Payout</h2>
+    <ul>
+      <li>From each $50 buy-in:
+        <ul>
+          <li>$30 → Small Pot (season winner)</li>
+          <li>$20 → Large Pot (league winner who wins 2 years in a row)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Small Pot Distribution</h2>
+    <ul>
+      <li>$310 to winner</li>
+      <li>$50 to runner-up</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Drafting</h2>
+    <ul>
+      <li>Year 1: Snake draft, randomized order, no trading, 8 hours per pick</li>
+      <li>Rookie drafts: 4 rounds, linear order</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Rookie Draft Pick Positioning</h2>
+    <ul>
+      <li><strong>Playoff Teams:</strong> Ordered by final placing (tie-breaker: max points)</li>
+      <li><strong>Non-Playoff Teams:</strong> Reverse order of Max Points For (to discourage tanking)</li>
+      <li><em>Note:</em> Draft order will be adjusted manually using MaxPF in the app</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Lineup</h2>
+    <ul>
+      <li>1 QB</li>
+      <li>2 RB</li>
+      <li>3 WR</li>
+      <li>1 TE</li>
+      <li>2 Flex</li>
+      <li>0 Defense</li>
+      <li>0 Kickers</li>
+      <li>16 Bench slots</li>
+      <li>2 IR slots</li>
+      <li>6 Taxi slots</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Taxi Rules</h2>
+    <ul>
+      <li>Only drafted players may be placed on Taxi Squad</li>
+      <li>Players may remain on taxi for 2 seasons</li>
+      <li>Once started in lineup, they cannot return to taxi (local rule — not enforced in app)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Playoffs</h2>
+    <ul>
+      <li>Top 6 teams qualify</li>
+      <li>Top 2 seeds receive byes</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Scoring</h2>
+    <ul>
+      <li>Full PPR scoring</li>
+      <li>6 point passing touchdowns</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Waivers</h2>
+    <ul>
+      <li>FAAB (Free Agent Acquisition Budget) system</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Trades</h2>
+    <ul>
+      <li>Trades are processed immediately</li>
+      <li>Collusion concerns trigger a league vote — 8 votes required to revert trade</li>
+      <li>Only current season and upcoming draft picks may be traded</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Rule Changes</h2>
+    <ul>
+      <li>Any rule changes require 8 "yes" votes to pass</li>
+      <li>If no rule exists for a situation, it will be allowed until a rule is made</li>
+    </ul>
+  </div>
 `;
 
 /*   STEP 3   */
